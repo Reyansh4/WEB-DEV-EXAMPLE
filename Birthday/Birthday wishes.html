@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="birthdaywishes.css">
+    <title>Birthday Wishes</title>
+</head>
+<body>
+    <h1> WELCOME </h1>
+    <div id="container">
+        <input id= "name" type="text" placeholder="Type your name" name="name" style="font-size: 25px;" required>
+        <br>
+        <button style="font-family:Georgia, 'Times New Roman', Times, serif;" onclick="checkname()"> NEXT </button>
+    </div>
+
+    <script>
+        function checkname() {
+            const Name = document.getElementById('name');
+            if (Name.value == "MEENAKSHI" || Name.value == "Meenakshi" || Name.value == "meenakshi") {
+                console.log(Name.value)
+                location.replace("main page.html")
+            }
+            else if (Name.value !== "MEENAKSHI" || Name.value !== "Meenakshi" || Name.value !== "meenakshi") {
+                console.log(Name.value)
+                location.replace("error 404.html")
+            }
+        };
+    </script>
+</body>
+</html>

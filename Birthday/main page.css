@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(0, 0, 0, 0.844);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: purple;
+    text-align: center;
+    font-size: 50px;
+}
+
+img {
+    opacity: 1;
+}
+
+button {
+    width: 120px;
+    height: 45px;
+    color: black;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 600px;
+}

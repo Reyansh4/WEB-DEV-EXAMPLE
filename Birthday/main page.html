@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main page.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <script src="jquery.min.js"></script>
+    <h1> SWIPE THE FIRST LETTER OF YOUR NAME </h1>
+    <button type="submit" name="submit" onclick="redirect()"> Click here to see images </button>
+    <div id="container">
+        <img class="first" src="20221002_232042.jpg" alt="img not found" width="640px" height="360px">
+        <img class="second" src="20221129_114915.jpg" alt="img not found"width="640px" height="360px">
+        <img class="third" src="1666437506164.jpg" alt="img not found"width="360px" height="640px">
+        <img class="fourth" src="1669744634977.jpg" alt="img not found"width="920px" height="640px">
+        <img class="fifth" src="1669746972989.jpg" alt="img not found"width="640px" height="360px">
+        <img class="sixth" src="IMG20220902215631.jpg" alt="img not found" width="640px" height="360px">
+        <img class="seventh" src="IMG20221024223333.jpg" alt="img not found" width="360px" height="640px">
+        <img class="eigth" src="IMG20220904173321.jpg" alt="img not found"width="920px" height="640px">
+    </div>
+    <script>
+        function redirect() {
+            location.replace("Surprise page.html")
+        }
+    </script>
+    <script>
+        $('#container').mousemove(function(){
+            $('img.first').hide(1000,function(){});
+            $('img.second').hide(1125,function(){});
+            $('img.third').hide(1250,function(){});
+            $('img.fourth').hide(1375,function(){});
+            $('img.fifth').hide(1500,function(){});
+            $('img.sixth').hide(1625,function(){});
+            $('img.seventh').hide(1750,function(){});
+            $('img.eigth').hide(1875,function(){}); 
+        });
+    </script>
+</body>
+</html>
